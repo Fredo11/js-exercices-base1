@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exercice_7</title>
+        <title>Exercice_6</title>
         <meta charset="UTF-8">
     </head>
     <body>
+		
 
+                <form>
+           
+            <label for="agemini">Tapez votre âge</label>
+            <input type="text" id="agemini" name="agemini" value=""/>
+            <button id="valider"  onclick="mafonction()" name ="valider">Valider</button>
+        </form>
+
+        <script type="text/javascript">
+            
+            function mafonction(){
+
+            var agemini = document.getElementById('agemini').value;
+            
+			            if (agemini <= 17) {
+						  alert("vous êtes mineur");
+						} else if (agemini >= 18) {
+						  alert("vous êtes majeur");
+						} else {
+						  alert("retapez votre age");
+						}
+			}
+
+
+
+        </script>
     <body>
 </html>

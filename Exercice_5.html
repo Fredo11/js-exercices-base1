@@ -10,7 +10,22 @@
             <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
             <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <button id="valider"  onclick="mafonction()" name ="valider">Valider</button>
         </form>
+
+        <script type="text/javascript">
+            
+            function mafonction(){
+
+            var premier_nombre = document.getElementById('premier_nombre').value;
+            var deuxieme_nombre = document.getElementById('deuxieme_nombre').value;
+
+            alert(parseInt(premier_nombre) * deuxieme_nombre);
+
+            }
+
+
+
+        </script>
     </body>
 </html>

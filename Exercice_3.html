@@ -12,7 +12,15 @@
     <input type="text" name="prenom" id="prenom" value=""/>
     <label for="ville">Ville : </label>
     <input type="text" name="ville" id="ville"  value=""/>
-    <button  name="valider" id="valider">Valider</button>
+    <button  name="valider"  onclick="mafonction()" id="valider">Valider</button>
 </form>
+<script type="text/javascript">
+	function mafonction() {
+		var prenom = document.getElementById('prenom').value;
+
+		alert("Bijour," + prenom);
+	}
+
+</script>
 </body>
 </html>
